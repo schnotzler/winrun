@@ -16,3 +16,5 @@ I can't think of any other usecase, because usually you could just write a .bat 
 - Now select `winrun.exe` from your directory in `Base Camp™`»`Device`»`Key Binding`»`Key`»`Function`»`Run Program`»`Link`
 
 Note: Of course you can have multiple configuration of `winrun` in use, just make sure to use a different directory with a different `winrun.cfg`
+
+<sub>This is provided as-is. Use this program at you own risk, i am not responsible for any problems or damages you might have due to using this program</sub>
