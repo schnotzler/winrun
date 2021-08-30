@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <inttypes.h>
 
 //run contents of winrun.cfg line by line on command interpreter
 int main(int argc, char *argv[])
@@ -8,7 +7,6 @@ int main(int argc, char *argv[])
     //create local variables
     FILE * fp;
     char * linebuf[ 256+1 ] = { 0 };
-    int8_t retVal = 0;
 
     //get and chdir executable dir
     char *dirsep = strrchr( argv[0], '\\' );
@@ -37,12 +35,12 @@ int main(int argc, char *argv[])
         if ( -1 == system( linebuf ))
         {
             perror("ERROR Executing system()");
-            retVal = -3;
-            break;
+            fclose( fp );
+            return -3;
         }
     }
 
-    //close file
+    //cleanup and close
     fclose( fp );
-    return retVal;
+    exit( 0 );
 }
