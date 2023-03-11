@@ -33,7 +33,7 @@ It is therefore possible to open multiple programs in one go.
 Leading spaces or tabs are ignored.
 So each one of the lines below is valid in a `winrun.cfg` and is going to give the same result.
 
-```cfg
+```txt
 notepad.exe winrun.cfg
  notepad.exe winrun.cfg
 		notepad.exe winrun.cfg
@@ -54,7 +54,7 @@ Whitespace handling is quite lenient here as well.
 So each one of the lines below is valid in a `winrun.cfg` and is going to give the same result, that is opening notepad without giving focus to the new window.
 
 
-```cfg
+```txt
 #NOFOCUSnotepad.exe  winrun.cfg
 #NOFOCUS notepad.exe  winrun.cfg
  #NOFOCUS notepad.exe  winrun.cfg
@@ -71,7 +71,7 @@ You can mix and match `#NOFOCUS`, `#FOCUS`, and no explicit specification in the
 
 Example for a mixed `winrun.cfg`, that would start 2 instances of notepad in the background and 2 in the foreground (only the last one will retain focus obviously). 2 of the editors will be empty, while 2 opened winrun.cfg. With the empty notepad launched by line 3 having focus.
 
-```cfg
+```txt
 #NOFOCUSnotepad.exe  winrun.cfg
 #FOCUS   notepad.exe  winrun.cfg
 notepad.exe
