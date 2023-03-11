@@ -4,7 +4,7 @@ Simple Windows Executable to run commands from a file.
 
 ## About
 
-The current [Base Camp™](https://mountain.gg/base-camp/) release does not support running commands or launching programs with custom launch options, while at the same time only allowing you to select .exe files to be launched.
+The current [Base Camp™](https://mountain.gg/base-camp/) release does not support running commands or launching programs with custom launch options, ~~while at the same time only allowing you to select .exe files to be launched.~~ This is no longer the case, Mountain updated it to allow running of all filetypes, batch files included. Therefore the only advantage this program can bring to the table, is launching multiple programs or programs without giving focus to them( not all programs respect this setting, so your mileage may vary)
 
 This program is a quick and dirty workaround for this usecase.
 
